@@ -1,0 +1,30 @@
+{
+  "name": "webcrate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webcratenz/webcrate.git"
+  },
+  "author": "Cyrus, Shaun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webcratenz/webcrate/issues"
+  },
+  "homepage": "https://github.com/webcratenz/webcrate#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gulp": "3.*",
+    "gulp-livereload": "3.*",
+    "gulp-notify": "2.*",
+    "gulp-sass": "2.*",
+    "gulp-sourcemaps": "1.*",
+    "gulp-util": "3.*",
+    "jquery-mask-plugin": "^1.14.14",
+    "parsleyjs": "^2.8.1"
+  }
+}
