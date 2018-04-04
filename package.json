@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "fullpage.js": "^2.9.6",
+    "gsap": "^1.20.4",
     "gulp": "3.*",
     "gulp-livereload": "3.*",
     "gulp-notify": "2.*",
