@@ -18,6 +18,7 @@
   "homepage": "https://github.com/webcratenz/webcrate#readme",
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "fullpage.js": "^2.9.6",
     "gulp": "3.*",
     "gulp-livereload": "3.*",
     "gulp-notify": "2.*",
