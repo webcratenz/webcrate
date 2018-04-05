@@ -1,0 +1,55 @@
+#navigation {
+  background-color: $white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 2em;
+      }
+
+      a:link,
+      a:visited {
+        color: $body-font-color;
+        display: inline-block;
+        font-size: 1.5rem;
+        text-decoration: none;
+        white-space: nowrap;
+
+        &::before,
+        &::after {
+          color: transparent;
+        }
+
+        $spacing: .5em;
+        &::before {
+          content: '{';
+          margin-right: $spacing;
+        }
+
+        &::after {
+          content: '}';
+          margin-left: $spacing;
+        }
+
+        &:hover,
+        &.active {
+          color: $wc-purple-light;
+
+          &::before,
+          &::after {
+            color: $wc-purple-light;
+          }
+        }
+      }
+    }
+  }
+}

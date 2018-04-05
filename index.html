@@ -16,129 +16,132 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience and security.</p>
-<![endif]-->
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+        your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-<section id="navigation">
-    <nav class="mainNav">
-        <ul>
-            <li><a href="#main"></a>intro</li>
-            <li><a href="#what-we-do"></a>what we do</li>
-            <li><a href="#our-work"></a>our work</li>
-            <li><a href="#why-webcrate"></a>why webcrate?</li>
-            <li><a href="#contact"></a>contact</li>
+    <nav id="navigation" class="navbar">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#main">intro</a></li>
+            <li class="nav-item"><a class="nav-link" href="#what-we-do">what we do</a></li>
+            <li class="nav-item"><a class="nav-link" href="#our-work">our work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#why-webcrate">why webcrate?</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
         </ul>
     </nav>
-</section>
 
-<section id="main">
-    <div class="intro">
-        <img src="/img/logo.svg" >
-        <h1>Hi, we are <span class="wc-purple-light">WEB<span class="wc-purple-white"><strong>CRATE</strong></span></span></h1>
+    <div id="main-container" data-scroll="scroll" data-target="#navigation" data-offset="0">
+        <section id="main">
+            <div class="intro">
+                <div class="logo">
+                    <img src="/img/logo.svg" >
+                </div>
+                <div class="dotted-line"><span></span></div>
+                <h1>Hi, we are <span class="wc-purple-light">WEB<span class="wc-purple-white"><strong>CRATE</strong></span></span></h1>
+            </div>
+            <div id="particles-js"></div>
+        </section>
+
+        <section id="what-we-do">
+            <h2>What we do</h2>
+            <p class="intro">We are specialists in web</p>
+
+            <div class="content">
+                <img src="#" alt="#">
+                <div>
+                    <h3>We are specialists</h3>
+                    <p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.</p>
+                    <p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-work">
+            <h2>Our work</h2>
+            <p class="intro">Previous work</p>
+
+            <div class="hero-projects">
+                <div class="project">
+                    <a href="">
+                        <img src="" alt="" class="logo"><img src="" alt="" class="bg">
+                        <p class="hover-text"></p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="">
+                        <img src="" alt="" class="logo"><img src="" alt="" class="bg">
+                        <p class="hover-text"></p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="">
+                        <img src="" alt="" class="logo"><img src="" alt="" class="bg">
+                        <p class="hover-text"></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-webcrate">
+            <h2>Why webcrate?</h2>
+            <p class="intro">We can do anything you want</p>
+
+            <div class="skillset">
+                <div class="skill">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="skill">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="skill">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="member">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="member">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+
+        </section>
     </div>
-    <div id="particles-js"></div>
-</section>
 
-<section id="what-we-do">
-    <h2>What we do</h2>
-    <p class="intro">We are specialists in web</p>
+    <!-- JS -->
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/fullpagejs/jquery.fullpage.extensions.min.js"></script>
+    <script src="js/webcrate.js"></script>
 
-    <div class="content">
-        <img src="#" alt="#">
-        <div>
-            <h3>We are specialists</h3>
-            <p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.</p>
-            <p>Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.</p>
-        </div>
-    </div>
-</section>
-
-<section id="our-work">
-    <h2>Our work</h2>
-    <p class="intro">Previous work</p>
-
-    <div class="hero-projects">
-        <div class="project">
-            <a href="">
-                <img src="" alt="" class="logo"><img src="" alt="" class="bg">
-                <p class="hover-text"></p>
-            </a>
-        </div>
-        <div class="project">
-            <a href="">
-                <img src="" alt="" class="logo"><img src="" alt="" class="bg">
-                <p class="hover-text"></p>
-            </a>
-        </div>
-        <div class="project">
-            <a href="">
-                <img src="" alt="" class="logo"><img src="" alt="" class="bg">
-                <p class="hover-text"></p>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section id="why-webcrate">
-    <h2>Why webcrate?</h2>
-    <p class="intro">We can do anything you want</p>
-
-    <div class="skillset">
-        <div class="skill">
-            <img src="" alt="">
-            <p></p>
-        </div>
-        <div class="skill">
-            <img src="" alt="">
-            <p></p>
-        </div>
-        <div class="skill">
-            <img src="" alt="">
-            <p></p>
-        </div>
-    </div>
-
-    <div class="team">
-        <div class="member">
-            <img src="" alt="">
-            <p></p>
-        </div>
-        <div class="member">
-            <img src="" alt="">
-            <p></p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-
-</section>
-
-<!-- JS -->
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="js/particles.min.js"></script>
-<script src="js/fullpagejs/jquery.fullpage.extensions.min.js"></script>
-<script src="js/webcrate.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-    window.ga = function () {
-        ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview')
-</script>
-<script type="text/javascript">
-    $(document).ready(function() {
-    });
-</script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        });
+    </script>
 </body>
 </html>

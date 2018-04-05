@@ -1,5 +1,8 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
 @import 'variables';
 @import 'base';
+@import 'sections';
 @import 'components';
 @import 'layout';
 @import 'variables';
@@ -15,4 +18,9 @@ html {
 
 .wc-purple-white {
   color: $wc-purple-white;
+}
+
+a:link,
+a:visited {
+  //color: $wc-purple;
 }
