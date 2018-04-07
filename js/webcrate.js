@@ -61,26 +61,33 @@ $(document).ready(function () {
     $('#main-container').fullpage({
         anchors: sectionAnchors,
         onLeave: function(index, nextIndex, direction){
-            const aniSpeed = 300;
-            const introItems = $('header .inner-wrapper > *:not(.logo)');
-            const logo = $('header .inner-wrapper > .logo');
+            const aniSpeed = 500;
+            const introItems = $('header .inner-wrapper > *:not(.logo, .section-info)');
             const header = $('header');
+            const activeNav = $('.section').eq(nextIndex-1).attr('data-id');
+            const sectionInfo = header.find('.section-info');
+
+            $('.nav-link').removeClass('active');
+            $('.nav-link[href="#'+activeNav+'"]').addClass('active');
+            console.log('active = '+activeNav);
 
             //after leaving section 2
             if(index == 1 && direction =='down'){
-                introItems.fadeOut();
+                introItems.fadeOut(aniSpeed);
                 header.addClass('sticky');
             }
 
-            else if(index == 2 && direction == 'up'){
-                introItems.fadeIn();
+            if(nextIndex == 1){
+                introItems.fadeIn(aniSpeed);
                 header.removeClass('sticky');
             }
 
             if(nextIndex > 1) {
-                const sectionHeader = $('.section').eq(nextIndex).find('.header');
-                const sectionInfo = header.find('.section-info');
-
+                const sectionHeader = $('.section').eq(nextIndex-1).find('.header');
+                const title = sectionHeader.find('.title').html();
+                const description = sectionInfo.find('.description').html();
+                sectionInfo.find('.title').html(title);
+                sectionInfo.find('.description').html(description);
             }
         }
     });

@@ -3,6 +3,7 @@
   bottom: 0;
   display: flex;
   justify-content: center;
+  padding-bottom: 0;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -21,22 +22,21 @@
         color: $body-font-color;
         display: inline-block;
         font-size: 1.5rem;
+        padding-bottom: 1.5em;
+        position: relative;
         text-decoration: none;
         white-space: nowrap;
 
-        &::before,
-        &::after {
+        .deco {
           color: transparent;
         }
 
         $spacing: .5em;
-        &::before {
-          content: '{';
+        .deco-left {
           margin-right: $spacing;
         }
 
-        &::after {
-          content: '}';
+        .deco-right {
           margin-left: $spacing;
         }
 
@@ -44,9 +44,23 @@
         &.active {
           color: $wc-purple-light;
 
-          &::before,
-          &::after {
+          .deco {
             color: $wc-purple-light;
+          }
+        }
+
+        &.active {
+          &::after {
+            background: $wc-purple-light;
+            bottom: 0;
+            content: '';
+            display: inline-block;
+            height: 30px;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            width: 1px;
           }
         }
       }

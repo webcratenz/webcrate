@@ -9,7 +9,6 @@ header,
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 1;
 
   $aniSpeed: .5s;
   .inner-wrapper {
@@ -20,6 +19,13 @@ header,
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .section-info {
+    @include transition(all $aniSpeed ease);
+    transition-delay: $aniSpeed;
+    display: none;
+    opacity: 0;
   }
 
   .logo {
@@ -49,6 +55,11 @@ header,
       background: $white;
       top: 0;
       transform: translateY(0);
+
+      .section-info {
+        display: block;
+        opacity: 1;
+      }
 
       .logo {
         margin: 1em auto 0;

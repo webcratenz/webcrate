@@ -6089,8 +6089,7 @@ header,
   right: 0;
   text-align: center;
   top: 0;
-  width: 100%;
-  z-index: 1; }
+  width: 100%; }
   header .inner-wrapper,
   #header .inner-wrapper {
     transition: all 0.5s ease;
@@ -6100,6 +6099,12 @@ header,
     right: 0;
     top: 50%;
     transform: translateY(-50%); }
+  header .section-info,
+  #header .section-info {
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+    display: none;
+    opacity: 0; }
   header .logo,
   #header .logo {
     transition: all 0.5s ease;
@@ -6123,6 +6128,10 @@ header,
     background: #fff;
     top: 0;
     transform: translateY(0); }
+    header.sticky .inner-wrapper .section-info,
+    #header.sticky .inner-wrapper .section-info {
+      display: block;
+      opacity: 1; }
     header.sticky .inner-wrapper .logo,
     #header.sticky .inner-wrapper .logo {
       margin: 1em auto 0;
@@ -6144,6 +6153,7 @@ section {
   bottom: 0;
   display: flex;
   justify-content: center;
+  padding-bottom: 0;
   position: fixed;
   width: 100%;
   z-index: 1; }
@@ -6157,30 +6167,39 @@ section {
       color: #aaa;
       display: inline-block;
       font-size: 1.5rem;
+      padding-bottom: 1.5em;
+      position: relative;
       text-decoration: none;
       white-space: nowrap; }
-      #navigation ul li a:link::before, #navigation ul li a:link::after,
-      #navigation ul li a:visited::before,
-      #navigation ul li a:visited::after {
+      #navigation ul li a:link .deco,
+      #navigation ul li a:visited .deco {
         color: transparent; }
-      #navigation ul li a:link::before,
-      #navigation ul li a:visited::before {
-        content: '{';
+      #navigation ul li a:link .deco-left,
+      #navigation ul li a:visited .deco-left {
         margin-right: 0.5em; }
-      #navigation ul li a:link::after,
-      #navigation ul li a:visited::after {
-        content: '}';
+      #navigation ul li a:link .deco-right,
+      #navigation ul li a:visited .deco-right {
         margin-left: 0.5em; }
       #navigation ul li a:link:hover, #navigation ul li a:link.active,
       #navigation ul li a:visited:hover,
       #navigation ul li a:visited.active {
         color: #9763d8; }
-        #navigation ul li a:link:hover::before, #navigation ul li a:link:hover::after, #navigation ul li a:link.active::before, #navigation ul li a:link.active::after,
-        #navigation ul li a:visited:hover::before,
-        #navigation ul li a:visited:hover::after,
-        #navigation ul li a:visited.active::before,
-        #navigation ul li a:visited.active::after {
+        #navigation ul li a:link:hover .deco, #navigation ul li a:link.active .deco,
+        #navigation ul li a:visited:hover .deco,
+        #navigation ul li a:visited.active .deco {
           color: #9763d8; }
+      #navigation ul li a:link.active::after,
+      #navigation ul li a:visited.active::after {
+        background: #9763d8;
+        bottom: 0;
+        content: '';
+        display: inline-block;
+        height: 30px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        width: 1px; }
 
 #particles-js {
   bottom: 0;
