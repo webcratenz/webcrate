@@ -1,13 +1,36 @@
-#main {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100%;
+header,
+#header {
   justify-content: center;
+  left: 0;
+  margin: auto;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
   text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  $aniSpeed: .5s;
+  .inner-wrapper {
+    @include transition(all $aniSpeed ease);
+    left: 0;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .logo {
-    margin-bottom: 2em;
+    @include transition(all $aniSpeed ease);
+    margin: 0 auto 2em;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+      max-width: 210px;
+    }
   }
 
   .dotted-line {
@@ -20,4 +43,21 @@
       margin: 0 auto;
     }
   }
+
+  &.sticky {
+    .inner-wrapper {
+      background: $white;
+      top: 0;
+      transform: translateY(0);
+
+      .logo {
+        margin: 1em auto 0;
+        max-width: 60px;
+      }
+    }
+  }
+}
+
+#main {
+  pointer-events: none;
 }

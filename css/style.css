@@ -6079,32 +6079,65 @@ h3 {
 h4 {
   font-size: 1.2em; }
 
-#main {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100%;
+header,
+#header {
   justify-content: center;
-  text-align: center; }
-  #main .logo {
-    margin-bottom: 2em; }
-  #main .dotted-line {
+  left: 0;
+  margin: auto;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  header .inner-wrapper,
+  #header .inner-wrapper {
+    transition: all 0.5s ease;
+    left: 0;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+  header .logo,
+  #header .logo {
+    transition: all 0.5s ease;
+    margin: 0 auto 2em;
+    max-width: 100%; }
+    header .logo img,
+    #header .logo img {
+      width: 100%;
+      max-width: 210px; }
+  header .dotted-line,
+  #header .dotted-line {
     margin-bottom: 1em; }
-    #main .dotted-line span {
+    header .dotted-line span,
+    #header .dotted-line span {
       border-left: 3px dashed #411677;
       display: inline-block;
       height: 100px;
       margin: 0 auto; }
+  header.sticky .inner-wrapper,
+  #header.sticky .inner-wrapper {
+    background: #fff;
+    top: 0;
+    transform: translateY(0); }
+    header.sticky .inner-wrapper .logo,
+    #header.sticky .inner-wrapper .logo {
+      margin: 1em auto 0;
+      max-width: 60px; }
+
+#main {
+  pointer-events: none; }
 
 section {
   margin: 0 auto;
   max-width: 1200px;
   min-height: 100%; }
-
-#main-container {
-  height: 100%;
-  overflow-y: scroll;
-  position: relative; }
+  section .header {
+    margin: auto;
+    text-align: center; }
 
 #navigation {
   background-color: #fff;
@@ -6154,13 +6187,14 @@ section {
   left: 0;
   opacity: .4;
   pointer-events: none;
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   z-index: -1; }
 
 body,
-html {
+html,
+#main-container {
   height: 100%; }
 
 .wc-purple-light {
