@@ -40,7 +40,7 @@
 
 $primary-font: 'Proxima Nova', sans-serif;
 $font-awesome: 'FontAwesome';
-$font-size-normal: 16px;
+$font-size-normal: 18px;
 $font-size-title: 2.5em;
 $font-size-sub-title: 2em;
 $font-size-large: 1.5em;
@@ -58,7 +58,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: $body-font-color;
+  color: $wc-purple;
   font-family: $primary-font;
 }
 

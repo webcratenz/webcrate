@@ -6057,14 +6057,14 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   color: #aaa;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100; }
 
 h1,
 h2,
 h3,
 h4 {
-  color: #aaa;
+  color: #411677;
   font-family: "Proxima Nova", sans-serif; }
 
 h1 {
@@ -6103,8 +6103,7 @@ header,
   #header .section-info {
     transition: all 0.5s ease;
     transition-delay: 0.5s;
-    display: none;
-    opacity: 0; }
+    display: none; }
   header .logo,
   #header .logo {
     transition: all 0.5s ease;
@@ -6128,13 +6127,9 @@ header,
     background: #fff;
     top: 0;
     transform: translateY(0); }
-    header.sticky .inner-wrapper .section-info,
-    #header.sticky .inner-wrapper .section-info {
-      display: block;
-      opacity: 1; }
     header.sticky .inner-wrapper .logo,
     #header.sticky .inner-wrapper .logo {
-      margin: 1em auto 0;
+      margin: 1em auto 2em;
       max-width: 60px; }
 
 #main {
@@ -6145,8 +6140,18 @@ section {
   max-width: 1200px;
   min-height: 100%; }
   section .header {
+    display: none;
     margin: auto;
     text-align: center; }
+  section .body {
+    display: flex;
+    padding-top: 10rem; }
+    section .body .image {
+      width: 60%; }
+    section .body .content {
+      width: 40%; }
+      section .body .content h3 {
+        font-weight: 700; }
 
 #navigation {
   background-color: #fff;
@@ -6210,6 +6215,15 @@ section {
   right: 0;
   top: 0;
   z-index: -1; }
+
+.section-info .title {
+  color: #411677;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.section-info .description {
+  font-size: 1.75rem; }
 
 body,
 html,

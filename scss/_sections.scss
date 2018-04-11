@@ -6,7 +6,25 @@ section {
   min-height: 100%;
 
   .header {
+    display: none;
     margin: auto;
     text-align: center;
+  }
+
+  .body {
+    display: flex;
+    padding-top: 10rem;
+
+    .image {
+      width: 60%;
+    }
+
+    .content {
+      width: 40%;
+
+      h3 {
+        font-weight: $bold-weight;
+      }
+    }
   }
 }

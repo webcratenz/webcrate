@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="536px" height="339px" viewBox="0 0 536 339" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>devices</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M254,291.312376 C254.488726,291.493742 254.94947,291.751664 255.363921,292.079771 L290.732342,320.079771 C292.897425,321.793795 293.26308,324.938432 291.549057,327.103515 C290.600706,328.301432 289.156693,329 287.628827,329 L158.606324,329 C155.8449,329 153.606324,326.761424 153.606324,324 C153.606324,322.454564 154.320972,320.995981 155.542207,320.048901 L191.64747,292.048901 C192.059704,291.729209 192.516429,291.478255 193,291.302078 L193,258 L254,258 L254,291.312376 Z" id="path-1"></path>
+        <rect id="path-2" x="0" y="0" width="446" height="259" rx="8"></rect>
+        <rect id="path-3" x="0" y="0" width="171" height="233" rx="5"></rect>
+        <rect id="path-4" x="0" y="0" width="73" height="138" rx="8"></rect>
+        <rect id="path-5" x="0.5" y="0.5" width="68" height="133" rx="8"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="What-we-do" transform="translate(-156.000000, -393.000000)">
+            <g id="devices" transform="translate(156.000000, 393.000000)">
+                <g id="iMac">
+                    <g id="Combined-Shape">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#979797" stroke-width="1" d="M253.5,258.5 L193.5,258.5 L193.5,291.652065 L193.171157,291.771871 C192.733721,291.93124 192.323044,292.157722 191.953882,292.444011 L155.848618,320.444011 C154.749508,321.296382 154.106324,322.609108 154.106324,324 C154.106324,326.485281 156.121043,328.5 158.606324,328.5 L287.628827,328.5 C289.003907,328.5 290.303518,327.871288 291.157034,326.793163 C292.699655,324.844589 292.370565,322.014415 290.421991,320.471794 L255.05357,292.471794 C254.682477,292.178012 254.26821,291.945227 253.826043,291.781139 L253.5,291.660145 L253.5,258.5 Z"></path>
+                    </g>
+                    <g id="Rectangle-2">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="445" height="258" rx="8"></rect>
+                    </g>
+                    <rect id="Rectangle-2" fill="#F5F5F5" x="16" y="14" width="415" height="232"></rect>
+                    <g id="Group-4" transform="translate(28.000000, 24.000000)">
+                        <rect id="Rectangle-5" fill="#6226AB" x="1" y="0" width="389" height="26"></rect>
+                        <rect id="Rectangle-5-Copy" fill="#6226AB" x="124" y="35" width="266" height="85"></rect>
+                        <rect id="Rectangle-5-Copy-3" fill="#D5B3FF" x="124" y="128" width="266" height="85"></rect>
+                        <rect id="Rectangle-5-Copy-2" fill="#9768D1" x="0" y="35" width="113" height="178"></rect>
+                    </g>
+                </g>
+                <g id="iPad" transform="translate(328.000000, 96.000000)">
+                    <g id="Rectangle-4">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="170" height="232" rx="5"></rect>
+                    </g>
+                    <rect id="Rectangle-2" fill="#F5F5F5" x="9" y="14" width="153" height="206"></rect>
+                    <rect id="Rectangle-5" fill="#6226AB" x="15" y="21" width="142" height="15"></rect>
+                    <rect id="Rectangle-5-Copy-4" fill="#6226AB" x="19" y="44" width="137" height="52"></rect>
+                    <rect id="Rectangle-5-Copy-5" fill="#9768D1" x="15" y="44" width="142" height="52"></rect>
+                    <rect id="Rectangle-5-Copy-6" fill="#6226AB" x="15" y="104" width="142" height="73"></rect>
+                    <rect id="Rectangle-5-Copy-7" fill="#D5B3FF" x="15" y="184" width="142" height="29"></rect>
+                </g>
+                <g id="iPhione" transform="translate(463.000000, 201.000000)">
+                    <g id="Rectangle-4">
+                        <use fill="#F5F5F5" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="72" height="137" rx="8"></rect>
+                    </g>
+                    <g id="Rectangle-4" transform="translate(2.000000, 2.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Mask" fill="#F5F5F5" xlink:href="#path-5"></use>
+                        <rect id="Rectangle-5" fill="#6226AB" mask="url(#mask-6)" x="-10" y="-2" width="87" height="15"></rect>
+                        <rect id="Rectangle-6" fill="#D5B3FF" mask="url(#mask-6)" x="-3" y="80" width="73" height="56"></rect>
+                        <rect id="Rectangle-5-Copy-8" fill="#9768D1" mask="url(#mask-6)" x="-10" y="16" width="87" height="29"></rect>
+                        <rect id="Rectangle-5-Copy-9" fill="#6226AB" mask="url(#mask-6)" x="-10" y="48" width="87" height="29"></rect>
+                        <rect id="Rectangle-2" fill="#D8D8D8" mask="url(#mask-6)" x="11.9047619" y="-3.86486486" width="46.0595238" height="10.2567568" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

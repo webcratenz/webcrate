@@ -73,22 +73,30 @@ $(document).ready(function () {
 
             //after leaving section 2
             if(index == 1 && direction =='down'){
-                introItems.fadeOut(aniSpeed);
+                introItems.fadeOut(aniSpeed, function(){showTitle(aniSpeed)});
                 header.addClass('sticky');
             }
 
             if(nextIndex == 1){
                 introItems.fadeIn(aniSpeed);
+                sectionInfo.hide();
                 header.removeClass('sticky');
             }
 
             if(nextIndex > 1) {
                 const sectionHeader = $('.section').eq(nextIndex-1).find('.header');
                 const title = sectionHeader.find('.title').html();
-                const description = sectionInfo.find('.description').html();
+                const description = sectionHeader.find('.description').html();
                 sectionInfo.find('.title').html(title);
                 sectionInfo.find('.description').html(description);
             }
         }
     });
 });
+
+function showTitle(speed) {
+    const sectionInfo = $('.section-info');
+    if(!sectionInfo.is(':visible')) {
+        sectionInfo.fadeIn(speed);
+    }
+}
