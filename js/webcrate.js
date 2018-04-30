@@ -100,3 +100,7 @@ function showTitle(speed) {
         sectionInfo.fadeIn(speed);
     }
 }
+
+new TypeIt('.webcrateTitle', {
+    speed: 110,
+}).type('<span class="unset-bold">Hi, we are </span><span class="wc-purple-light">WEB</span>CRATE').pause(500).delete(1).type('DEVELOPERS').pause(500).delete(10).type('DESIGNERS');
