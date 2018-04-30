@@ -1,12 +1,12 @@
 .section-info {
   .title {
     color: $wc-purple;
-    font-size: 2.2rem;
+    font-size: $font-size-sub-title;
     font-weight: $bold-weight;
     margin-bottom: 0;
   }
 
   .description {
-    font-size: 1.75rem;
+    font-size: 1em;
   }
 }

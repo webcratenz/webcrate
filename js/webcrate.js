@@ -102,5 +102,6 @@ function showTitle(speed) {
 }
 
 new TypeIt('.webcrateTitle', {
-    speed: 110,
-}).type('<span class="unset-bold">Hi, we are </span><span class="wc-purple-light">WEB</span>CRATE').pause(500).delete(1).type('DEVELOPERS').pause(500).delete(10).type('DESIGNERS');
+  speed: 110,
+  deleteSpeed: 90,
+}).type('<span class="unset-bold">Hi, we are </span><span class="wc-purple-light">WEB</span>CRATE').pause(1500).delete(5).pause(1000).type('DEVELOPERS').pause(1500).delete(10).pause(1000).type('DESIGNERS').pause(1500).delete(9).pause(1000).type('CRATE');

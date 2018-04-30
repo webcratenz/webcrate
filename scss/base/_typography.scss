@@ -40,7 +40,7 @@
 
 $primary-font: 'Proxima Nova', sans-serif;
 $font-awesome: 'FontAwesome';
-$font-size-normal: 18px;
+$font-size-normal: 16px;
 $font-size-title: 2.5em;
 $font-size-sub-title: 2em;
 $font-size-large: 1.5em;
@@ -76,4 +76,8 @@ h3 {
 
 h4 {
   font-size: $font-size-bold;
+}
+
+.description {
+  font-size: $font-size-normal;
 }
