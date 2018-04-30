@@ -6303,7 +6303,8 @@ h2 {
   font-size: 2em; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-bottom: 1em; }
 
 h4 {
   font-size: 1.2em; }
