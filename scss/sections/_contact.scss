@@ -1,5 +1,8 @@
 .contact {
   form {
+    margin: auto;
+    max-width: 550px;
+    
     input,
     textarea {
       border: 2px solid $wc-purple;
@@ -9,8 +12,22 @@
       }
     }
     
-    [type='submit'] {
-      background-color: #fff;
+    button {
+      background-color: $wc-purple;
+      border: 0;
+      color: $dark-bg-text;
+      padding: 1em;
+      width: 100%;
+      
+      &:hover {
+        background-color: lighten($wc-purple, 10);
+      }
+    }
+    
+    .form-row {
+      .form-group {
+        width: 50%;
+      }
     }
   }
 }

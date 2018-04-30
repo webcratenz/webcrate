@@ -124,16 +124,18 @@
             </div>
 
             <form action="https://formspree.io/webcratenz@gmail.com" method="POST">
-                <div class="form-group">
-                    <input class="form-control" type="text" name="name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="email" name="_replyto" placeholder="Email address">
+                <div class="form-row">
+                    <div class="form-group col-xs-6">
+                        <input class="form-control" type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <input class="form-control" type="email" name="_replyto" placeholder="Email address">
+                    </div>
                 </div>
                 <div class="form-group">
                     <textarea class="form-control" name="message" placeholder="Message"></textarea>
                 </div>
-                <input type="submit" value="Send">
+                <button class="btn btn-primary" type="submit">send</button>
             </form>
 
             <footer>
