@@ -6372,19 +6372,36 @@ header,
     #header.sticky .inner-wrapper .logo {
       margin: 1em auto 2em;
       max-width: 60px; }
+  header .webcrateTitle,
+  #header .webcrateTitle {
+    font-weight: bold;
+    color: #411677; }
+    header .webcrateTitle .unset-bold,
+    #header .webcrateTitle .unset-bold {
+      font-weight: normal; }
 
 #main {
   pointer-events: none; }
 
-.contact form input,
-.contact form textarea {
-  border: 2px solid #411677; }
-  .contact form input:focus,
-  .contact form textarea:focus {
-    outline: none; }
-
-.contact form [type='submit'] {
-  background-color: #fff; }
+.contact form {
+  margin: auto;
+  max-width: 550px; }
+  .contact form input,
+  .contact form textarea {
+    border: 2px solid #411677; }
+    .contact form input:focus,
+    .contact form textarea:focus {
+      outline: none; }
+  .contact form button {
+    background-color: #411677;
+    border: 0;
+    color: #fff;
+    padding: 1em;
+    width: 100%; }
+    .contact form button:hover {
+      background-color: #591ea2; }
+  .contact form .form-row .form-group {
+    width: 50%; }
 
 section {
   margin: 0 auto;
@@ -6403,6 +6420,13 @@ section {
       width: 40%; }
       section .body .content h3 {
         font-weight: 700; }
+
+footer {
+  margin: 2em auto 0;
+  max-width: 550px;
+  text-align: center; }
+  footer p {
+    color: #411677; }
 
 #navigation {
   background-color: #fff;
