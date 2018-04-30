@@ -29,12 +29,12 @@ header,
 
   .logo {
     @include transition(all $aniSpeed ease);
-    margin: 0 auto 2em;
+    margin: 0 auto 1em;
     max-width: 100%;
 
     img {
       width: 100%;
-      max-width: 210px;
+      max-width: 150px;
     }
   }
 
@@ -44,7 +44,7 @@ header,
     span {
       border-left: 3px dashed $wc-purple;
       display: inline-block;
-      height: 100px;
+      height: 70px;
       margin: 0 auto;
     }
   }
@@ -56,7 +56,7 @@ header,
       transform: translateY(0);
 
       .logo {
-        margin: 1em auto 2em;
+        margin: 2em auto .5em;
         max-width: 60px;
       }
     }
@@ -65,6 +65,10 @@ header,
   .webcrateTitle {
     font-weight: bold;
     color: $wc-purple;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: $font-size-title;
 
     .unset-bold {
       font-weight: normal;

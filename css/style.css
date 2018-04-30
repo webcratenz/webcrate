@@ -6286,7 +6286,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   color: #aaa;
   font-family: "Proxima Nova", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100; }
 
 h1,
@@ -6303,10 +6303,14 @@ h2 {
   font-size: 2em; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-bottom: 1em; }
 
 h4 {
   font-size: 1.2em; }
+
+.description {
+  font-size: 16px; }
 
 header,
 #header {
@@ -6344,7 +6348,7 @@ header,
   header .logo,
   #header .logo {
     transition: all 0.5s ease;
-    margin: 0 auto 2em;
+    margin: 0 auto 1em;
     max-width: 100%; }
     @media screen and (prefers-reduced-motion: reduce) {
       header .logo,
@@ -6353,7 +6357,7 @@ header,
     header .logo img,
     #header .logo img {
       width: 100%;
-      max-width: 210px; }
+      max-width: 150px; }
   header .dotted-line,
   #header .dotted-line {
     margin-bottom: 1em; }
@@ -6361,7 +6365,7 @@ header,
     #header .dotted-line span {
       border-left: 3px dashed #411677;
       display: inline-block;
-      height: 100px;
+      height: 70px;
       margin: 0 auto; }
   header.sticky .inner-wrapper,
   #header.sticky .inner-wrapper {
@@ -6370,12 +6374,16 @@ header,
     transform: translateY(0); }
     header.sticky .inner-wrapper .logo,
     #header.sticky .inner-wrapper .logo {
-      margin: 1em auto 2em;
+      margin: 2em auto .5em;
       max-width: 60px; }
   header .webcrateTitle,
   #header .webcrateTitle {
     font-weight: bold;
-    color: #411677; }
+    color: #411677;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5em; }
     header .webcrateTitle .unset-bold,
     #header .webcrateTitle .unset-bold {
       font-weight: normal; }
@@ -6493,12 +6501,12 @@ footer {
 
 .section-info .title {
   color: #411677;
-  font-size: 2.2rem;
+  font-size: 2em;
   font-weight: 700;
   margin-bottom: 0; }
 
 .section-info .description {
-  font-size: 1.75rem; }
+  font-size: 1em; }
 
 body,
 html,
